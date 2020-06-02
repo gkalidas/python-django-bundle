@@ -1,9 +1,11 @@
-def function(*args):
-    for string in args:
-        print(string)
+# program to test multiple args in python
+
+# def function(*args):
+#     for string in args:
+#         print(string)
 
 
-function('Hi', 'we', 'are', 'working' ' with ' ' multiple arguments here.')
+# function('Hi', 'we', 'are', 'working' ' with ' ' multiple arguments here.')
 
 
 def function(*args):
