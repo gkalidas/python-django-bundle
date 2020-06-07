@@ -7,4 +7,7 @@ while users:
     current_user = users.pop()
     activated_users.append(current_user)
 
-print(activated_users)
+for i in activated_users:
+    print(i)
+    # always put a title to look it more appealing
+    print(i.title())
