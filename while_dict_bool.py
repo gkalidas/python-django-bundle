@@ -1,11 +1,11 @@
 # while with dictionary and boolean
 
 # 3
-# while True:
-#     print('please enter you name')
-#     name = input(': ')
-#     if name =='exit' or name == 'e':
-#         break
+while True:
+    print('please enter you name')
+    name = input(': ')
+    if name == 'exit' or name == 'e':
+        break
 
 
 # 2
