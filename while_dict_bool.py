@@ -1,11 +1,26 @@
 # while with dictionary and boolean
 
-# 3
-while True:
-    print('please enter you name')
-    name = input(': ')
-    if name == 'exit' or name == 'e':
+# 4
+res = {}
+
+active = True
+while active:
+    name = input('Please enter your name: ')
+    b_date = input("Please enter your b_date: ")
+    res[name] = b_date
+    repeat = input('Would you like to repeat for someone else? yes/no: ')
+    if repeat == 'no':
         break
+
+for k, v in res.items():
+    print('_ ', k, v)
+
+# 3
+# while True:
+#     print('please enter you name')
+#     name = input(': ')
+#     if name == 'exit' or name == 'e':
+#         break
 
 
 # 2
