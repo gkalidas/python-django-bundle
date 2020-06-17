@@ -27,6 +27,6 @@ while True:
     else:
         print('Enter valid choice')
     if c:
-        print(c)
+        print(f'The answer of {user_input} is {c}')
 
 print('Exiting, Thanks for using calculator')
