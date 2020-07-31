@@ -31,11 +31,23 @@ class ElectricCar(Car):
     """
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
-        self.battery = 70
+        self.battery = Battery()
 
     def desc_battery(self):
         """This function describes the battery."""
         print('This car has ' + str(self.battery) + ' kwh battery.')
+
+    def fill_gas(self):
+        print("This car doesn't need gas tank.")
+
+
+class Battery():
+    def __init__(self, battery_size=70):
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        """This function describes/prints the battery size of a given model."""
+        print("This car has a " + str(self.battery_size) + "kwh battery.")
 
 
 # my_new_car = Car('audi', 'a4', 2016)
@@ -44,6 +56,15 @@ class ElectricCar(Car):
 # my_new_car.update_km(13)
 # my_new_car.read_km()
 
-my_car = ElectricCar('Tesla', 'model s', 2019)
-print(my_car.get_des())
-my_car.desc_battery()
+# my_car = ElectricCar('Tesla', 'model s', 2019)
+# print(my_car.get_des())
+# my_car.desc_battery()
+
+# importing battery from Battery class
+# my_car.battery.describe_battery()
+# my_car.fill_gas()
+
+my_car_1 = ElectricCar('Tesla', 'model t', 2020)
+my_car_1.battery.describe_battery()
+my_car_1 = Battery(100)
+my_car_1.describe_battery()
