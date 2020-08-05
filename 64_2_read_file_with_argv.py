@@ -1,6 +1,8 @@
 
 # !/usr/bin/env python3
-# # This isn't working for me geting Permissin denied error
+# Also run the following command
+# chmod +x 64_2_read_file_with_argv.py
+# to run the file
 from sys import argv
 
 script_file, file_name = argv
