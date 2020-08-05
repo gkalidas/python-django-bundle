@@ -17,4 +17,5 @@ computer = input(prompt)
 
 print(
     f"So you like {file_name},\
-    you live in {lives} and you have {computer} computer.")
+        you live in {lives} and\
+            you have {computer} computer.")
