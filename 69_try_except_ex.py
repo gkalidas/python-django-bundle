@@ -11,6 +11,7 @@ def count_words(file_name):
 
 file_names = (input('Enter file name/s : '))
 file_names = file_names.split()
+
 for filename in file_names:
     print(f'Given file is {filename}')
     count_words(filename)
